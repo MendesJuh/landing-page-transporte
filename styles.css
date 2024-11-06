@@ -1,0 +1,184 @@
+#global-style {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --yellow: #FFC107;
+}
+
+body {
+    color: var(--black);
+    background: var(--white);
+}
+
+/* Navegação */
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    width: 100%;
+    background: var(--yellow);
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navigation .logo {
+    font-family: 'Handlee', cursive;
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.navigation ul {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.navigation ul li {
+    list-style: none;
+}
+
+.navigation ul li a {
+    color: var(--black);
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navigation ul li a:hover {
+    color: var(--white);
+}
+
+/* Slider */
+.slider {
+    margin: 0 auto;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+.slides {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 25%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.manual-btn {
+    border: 2px solid var(--yellow);
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.manual-btn:hover {
+    background-color: var(--yellow);
+}
+
+/* Texto Principal */
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10%;
+    text-align: center;
+}
+
+.home-text {
+    max-width: 800px;
+}
+
+.home-text .text-h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: var(--yellow);
+    font-family: 'Handlee', cursive;
+}
+
+.home-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    color: var(--black);
+}
+
+/* Link do WhatsApp */
+.whatsapp-link {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: var(--white);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: opacity 0.3s;
+}
+
+.whatsapp-link:hover {
+    opacity: 0.8;
+}
+
+.fa-whatsapp {
+    margin-top: 15px;
+}
+
+/* Container Geral */
+.container {
+    padding: 80px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer {
+    width: 100%;
+    background-color: var(--yellow);
+    color: var(--black);
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1rem;
+    bottom: 0;
+    left: 0;
+}
+
