@@ -182,3 +182,91 @@ body {
     left: 0;
 }
 
+/* Media Queries para Responsividade */
+@media (max-width: 1024px) {
+    .navigation {
+        padding: 18px 15px;
+    }
+
+    .home {
+        padding: 0 5%;
+    }
+
+    .container {
+        padding: 80px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navigation ul {
+        display: none;
+        flex-direction: column;
+        background: var(--yellow);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
+    }
+
+    .navigation ul.active {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .home {
+        height: auto;
+        padding-top: 100px;
+    }
+
+    .home-text .text-h1 {
+        font-size: 2rem;
+    }
+
+    .home-text p {
+        font-size: 0.9rem;
+    }
+
+    .whatsapp-link {
+        width: 40px;
+        height: 40px;
+        font-size: 25px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-text .text-h1 {
+        font-size: 1.8rem;
+    }
+
+    .home-text p {
+        font-size: 0.8rem;
+    }
+
+    .navigation ul {
+        width: 150px;
+    }
+
+    .container {
+        padding: 80px 10px;
+    }
+
+    .navigation {
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+}
+
+/* Imagens Responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+}
